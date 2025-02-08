@@ -444,4 +444,30 @@ export const mfmStyle = `
         filter: hue-rotate(360deg) contrast(150%) saturate(150%);
     }
 }
+
+.sparkle-root {
+	position: relative;
+	display: inline-block;
+}
+
+.sparkle-particle {
+	transform-origin: center;
+	transform-box: fill-box;
+	translate: var(--translateX) var(--translateY);
+	animation: particleAnimation var(--duration) linear infinite;
+}
+
+@keyframes particleAnimation {
+	0% {
+		rotate: 0deg;
+		scale: 0;
+	}
+	50% {
+		scale: var(--size);
+	}
+	100% {
+		rotate: 360deg;
+		scale: 0;
+	}
+}
 `;
