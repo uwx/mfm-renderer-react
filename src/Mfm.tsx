@@ -501,8 +501,8 @@ function Sparkle(props: MfmProps<MfmFn>) {
     }
 
     useEffect(() => {
-        let timeoutAdd: number | NodeJS.Timeout | undefined;
-        let timeoutParticles: number | NodeJS.Timeout | undefined;
+        let timeoutAdd: number | undefined;
+        let timeoutParticles: number | undefined;
         let stop = false;
 
         const ro = new ResizeObserver((entries, observer) => {

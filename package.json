@@ -3,8 +3,11 @@
     "main": "out/Mfm.js",
     "types": "out/Mfm.d.ts",
     "type": "module",
-    "version": "1.0.0",
-    "files": ["out", "LICENSE.txt"],
+    "version": "1.1.0",
+    "files": [
+        "out",
+        "LICENSE.txt"
+    ],
     "license": "AGPL-3.0-only",
     "devDependencies": {
         "@biomejs/biome": "1.9.4",
